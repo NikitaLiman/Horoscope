@@ -1,0 +1,88 @@
+import { Zodiac, ZodiacInfo } from "../../../types";
+
+export const ZODIAC_INFO: Record<Zodiac, ZodiacInfo> = {
+  aries: {
+    name: "Aries",
+    ukrName: "Овен",
+    element: "fire",
+    dates: "21 березня - 19 квітня",
+    icon: "♈️",
+  },
+  taurus: {
+    name: "Taurus",
+    ukrName: "Телець",
+    element: "earth",
+    dates: "20 квітня - 20 травня",
+    icon: "♉️",
+  },
+  gemini: {
+    name: "Gemini",
+    ukrName: "Близнюки",
+    element: "air",
+    dates: "21 травня - 20 червня",
+    icon: "♊️",
+  },
+  cancer: {
+    name: "Cancer",
+    ukrName: "Рак",
+    element: "water",
+    dates: "21 червня - 22 липня",
+    icon: "♋️",
+  },
+  leo: {
+    name: "Leo",
+    ukrName: "Лев",
+    element: "fire",
+    dates: "23 липня - 22 серпня",
+    icon: "♌️",
+  },
+  virgo: {
+    name: "Virgo",
+    ukrName: "Діва",
+    element: "earth",
+    dates: "23 серпня - 22 вересня",
+    icon: "♍️",
+  },
+  libra: {
+    name: "Libra",
+    ukrName: "Терези",
+    element: "air",
+    dates: "23 вересня - 22 жовтня",
+    icon: "♎️",
+  },
+  scorpio: {
+    name: "Scorpio",
+    ukrName: "Скорпіон",
+    element: "water",
+    dates: "23 жовтня - 21 листопада",
+    icon: "♏️",
+  },
+  sagittarius: {
+    name: "Sagittarius",
+    ukrName: "Стрілець",
+    element: "fire",
+    dates: "22 листопада - 21 грудня",
+    icon: "♐️",
+  },
+  capricorn: {
+    name: "Capricorn",
+    ukrName: "Козеріг",
+    element: "earth",
+    dates: "22 грудня - 19 січня",
+    icon: "♑️",
+  },
+  aquarius: {
+    name: "Aquarius",
+    ukrName: "Водолій",
+    element: "air",
+    dates: "20 січня - 18 лютого",
+    icon: "♒️",
+  },
+  pisces: {
+    name: "Pisces",
+    ukrName: "Риби",
+    element: "water",
+    dates: "19 лютого - 20 березня",
+    icon: "♓️",
+  },
+};

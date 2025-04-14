@@ -1,42 +1,68 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+z:root {
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 15px 25px rgba(43, 62, 80, 0.15);
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  --element-fire: #ff7675;
+  --element-earth: #55efc4;
+  --element-air: #74b9ff;
+  --element-water: #a29bfe;
+
+  --rating-low: #ff7675;
+  --rating-medium: #fdcb6e;
+  --rating-high: #55efc4;
+
+  --aspect-health: #55efc4;
+  --aspect-relationships: #a29bfe;
+  --aspect-career: #74b9ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f9fc;
+  --text-primary: #222831;
+  --text-secondary: #555e6c;
+  --accent-color: #3498db;
+  --accent-color-hover: #2980b9;
+  --accent-color-soft: rgba(52, 152, 219, 0.1);
+  --border-color: #e3e8ef;
+  --card-bg: #ffffff;
+  --input-bg: #f0f4f8;
+  --shadow: 0 8px 20px rgba(43, 62, 80, 0.1);
+
+  --success-color: #2ecc71;
+  --success-bg: rgba(46, 204, 113, 0.1);
+  --warning-color: #f39c12;
+  --warning-bg: rgba(243, 156, 18, 0.1);
+  --danger-color: #e74c3c;
+  --danger-bg: rgba(231, 76, 60, 0.1);
+  --info-color: #3498db;
+  --info-bg: rgba(52, 152, 219, 0.1);
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+[data-theme="dark"] {
+  --bg-primary: #10151d;
+  --bg-secondary: #151f2e;
+  --text-primary: #ecf0f1;
+  --text-secondary: #a0aec0;
+  --accent-color: #40a9ff;
+  --accent-color-hover: #1890ff;
+  --accent-color-soft: rgba(64, 169, 255, 0.15);
+  --border-color: #2d3748;
+  --card-bg: #1a2635;
+  --input-bg: #1e293b;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  --success-color: #68d391;
+  --success-bg: rgba(104, 211, 145, 0.15);
+  --warning-color: #f6ad55;
+  --warning-bg: rgba(246, 173, 85, 0.15);
+  --danger-color: #fc8181;
+  --danger-bg: rgba(252, 129, 129, 0.15);
+  --info-color: #63b3ed;
+  --info-bg: rgba(99, 179, 237, 0.15);
 }
